@@ -10,12 +10,12 @@
 
 #S-type
 sbent     11..7=0 19..15=0 31..20=0x000 14..12=0 6..2=0x1e 1..0=3
-srbse     imm12hi rs1 imm12lo 14..12=1 6..2=0x1e 1..0=3 24..20=0
-srlmt     imm12hi rs1 imm12lo 14..12=2 6..2=0x1e 1..0=3 24..20=0
+sradd     imm12hi rs1 rs2 imm12lo 14..12=1 6..2=0x1e 1..0=3
+srdda     imm12hi rs1 rs2 imm12lo 14..12=2 6..2=0x1e 1..0=3
 srdlg     imm12hi rs1 imm12lo 14..12=3 6..2=0x1e 1..0=3 24..20=0
-srdlgm    imm12hi rs1 imm12lo 14..12=4 6..2=0x1e 1..0=3 24..20=0
+srdsub    imm12hi rs1 rs2 imm12lo 14..12=4 6..2=0x1e 1..0=3
 sbxit     11..7=0 19..15=0 31..20=0x000 14..12=5 6..2=0x1e 1..0=3
-srsub     imm12hi rs1 imm12lo 14..12=6 6..2=0x1e 1..0=3 24..20=0
+#srsub     imm12hi rs1 imm12lo 14..12=6 6..2=0x1e 1..0=3 24..20=0
 
 #I-type alternatives
 #sbent     11..7=0 19..15=0 31..20=0x000 14..12=0 6..2=0x1e 1..0=3
